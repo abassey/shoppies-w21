@@ -2,7 +2,7 @@
 
 Task
 -
-A web app that a user can search up movies to nominate for an award, view their nominated list and remove nominations if necessary. Users can onlu have up to 5 nominations.
+A web app that a user can search up movies to nominate for an award, view their nominated list and remove nominations if necessary. Users can only have up to 5 nominations.
 
 Full Challenge can be found [here.](https://docs.google.com/document/d/1AZO0BZwn1Aogj4f3PDNe1mhq8pKsXZxtrG--EIbP_-w/preview?pru=AAABdHlQRnE*WQl0v68vsF_nPbygOim7ww#heading=h.31w9woubunro)
 
