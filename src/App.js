@@ -105,7 +105,7 @@ class App extends Component {
         <br/>
         <form onSubmit={this.handleSubmit}>
           <input placeholder="Enter Movie Title" value={this.state.term} onChange={this.onChange} />
-          <button>Search</button>
+          <button>Find</button>
           <p>Please enter a movie to nominate for the Shoppies Award.</p>
         </form>
         <Result isNotMovie={this.state.isNotMovie}/>
