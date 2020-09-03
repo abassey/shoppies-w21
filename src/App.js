@@ -44,7 +44,7 @@ class App extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const api_key = 'de4c0dc';
-    const url = ` http://www.omdbapi.com/?t=${this.state.term}&apikey=${api_key}`;
+    const url = ` https://www.omdbapi.com/?t=${this.state.term}&apikey=${api_key}`;
     fetch(url)
       .then(response => response.json())
       .then(data =>  {
