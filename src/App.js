@@ -6,6 +6,9 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import toast from 'toasted-notes';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'toasted-notes/src/styles.css';
@@ -109,26 +112,34 @@ class App extends Component {
           <p>Please enter a movie to nominate for the Shoppies Award.</p>
         </form>
         <Result isNotMovie={this.state.isNotMovie}/>
-        <h3 style={{textAlign: 'left'}}>Results</h3>
-          <Card style={{ width: '18rem' }}>
-            <Card.Body>
-              <Card.Title>{this.state.movie.title}</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">{this.state.movie.year}</Card.Subtitle>
-              <Card.Text>
-              {this.state.movie.plot}<br/><br/>
-              {this.state.movie.genre}
-              </Card.Text>
-              <Button onClick={this.onClick}>Nominate</Button>
-            </Card.Body>
-          </Card>
-        <br/>
-        <h3 style={{textAlign: 'left'}}>Nominations</h3>
-        <p style={{textAlign: 'left'}}>If you would like to remove a nomination, please click on it.</p>
-        <Jumbotron fluid> 
-          <ul>
-          <List entries={this.state.nomList} delete={this.deleteEntry}/>
-        </ul>
-        </Jumbotron>
+        <Container>
+          <Row>
+            <Col>
+                <h3 style={{textAlign: 'left'}}>Results</h3>
+                  <Card style={{ width: '18rem' }}>
+                    <Card.Body>
+                      <Card.Title>{this.state.movie.title}</Card.Title>
+                      <Card.Subtitle className="mb-2 text-muted">{this.state.movie.year}</Card.Subtitle>
+                      <Card.Text>
+                      {this.state.movie.plot}<br/><br/>
+                      {this.state.movie.genre}
+                      </Card.Text>
+                      <Button onClick={this.onClick}>Nominate</Button>
+                    </Card.Body>
+                  </Card>
+                <br/>
+            </Col>
+            <Col>
+                <h3 style={{textAlign: 'left'}}>Nominations</h3>
+                <p style={{textAlign: 'left'}}>If you would like to remove a nomination, please click on it.</p>
+                <Jumbotron fluid> 
+                  <ul>
+                  <List entries={this.state.nomList} delete={this.deleteEntry}/>
+                  </ul>
+                </Jumbotron>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
