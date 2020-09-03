@@ -77,13 +77,15 @@ class App extends Component {
       key: Date.now() //key used for delete function, instead of index
     };
 
-    if(this.state.nomList.length !== 5)
+    if(this.state.nomList.length !== 5 && this.state.nomList.some(item => item.text === this.state.movie.title) === false)
     {
       this.setState({
         nomList: [...this.state.nomList, newEntry] 
       })
-    } else {
+    } else if(this.state.nomList.length === 5) {
       toast.notify("You can only have 5 Nominations!");
+    } else if(this.state.nomList.some(item => item.text === this.state.movie.title) === true) {
+      toast.notify("You've already nominated this movie!");
     }
   }
 
