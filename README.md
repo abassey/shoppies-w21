@@ -38,7 +38,7 @@ The order mentioned is also the order of functionality I chose, to know what to 
 - remove from n -> delete
 
 Technical Requirements (From Challenge)
-- 
+-
 - display banner when n == 5
 - only movies should be displayed
 - search results must contain at least
@@ -62,7 +62,7 @@ Tech Stack Consideration
 Change Log
 -
 #### First Commit
- 
+
 ![Gif showning workflow of first commit](demo/ezgif-6-04caa15e042c.gif)
 
 Missing Functionality:
@@ -81,6 +81,7 @@ Resources
 - [Building an Awesome Todo List App in React](https://www.kirupa.com/react/simple_todo_app_react.htm)
 - [Markdown Guide](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#headers)
 - [The best way to bind event handlers in React](https://www.freecodecamp.org/news/the-best-way-to-bind-event-handlers-in-react-282db2cf1530/)
+- [Deployment to Heroku](https://create-react-app.dev/docs/deployment/#heroku)
 
 #### Debugging and Troubleshooting
 
