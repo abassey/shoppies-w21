@@ -70,7 +70,7 @@ Missing Functionality:
 2. Checking to see if a returned movie has already been nominated and removing thre ability to double nominate
 3. Deployment to a Hosted Site
 
-#### First Commit - Thur 3rd, 6:33pm
+#### Second Commit - Thur 3rd, 6:33pm
 
 ![Gif showing workflow of second commit](demo/ezgif-6-480615cb3144.gif)
 
