@@ -58,7 +58,9 @@ Tech Stack Consideration
 | graphQL | ❌ |
 
 Change Log
-- First Commit Look
+-
+#### First Commit
+ 
 ![Gif showning workflow of first commit](demo/ezgif-6-04caa15e042c.gif)
 
 Missing Functionality:
