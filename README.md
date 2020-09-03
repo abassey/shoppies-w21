@@ -59,7 +59,7 @@ Tech Stack Consideration
 
 Change Log
 - First Commit Look
-
+![Gif showning workflow of first commit](demo/ezgif-6-04caa15e042c.gif)
 
 Missing Functionality:
 1. Toggling the Nominate button between enabled and disabled at the right times
