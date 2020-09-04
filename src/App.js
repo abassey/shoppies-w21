@@ -71,7 +71,7 @@ class App extends Component {
 
   //handling the nominate function. adding the nominated move to the nomiation list
   onClick = (event) => {
-    if(this.state.movie.title === '')
+    if(this.state.movie.title === '') //check that there is actually something to nominate
     {
       toast.notify("Doesn't look like you have anything there. Want to try searching first?");
     } else {
@@ -79,7 +79,8 @@ class App extends Component {
         text: this.state.movie.title,
         key: Date.now() //key used for delete function, instead of index
       };
-  
+      
+      //check that all elements are unique and the array length is 5
       if(this.state.nomList.length !== 5 && this.state.nomList.some(item => item.text === this.state.movie.title) === false)
       {
         this.setState({

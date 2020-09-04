@@ -61,7 +61,7 @@ Tech Stack Consideration
 
 Change Log
 -
-#### First Commit - Thur 3rd, 3:30pm
+#### First Commit - Thur 3rd Sept 2020, 3:30pm
 
 ![Gif showing workflow of first commit](demo/ezgif-6-04caa15e042c.gif)
 
@@ -70,17 +70,24 @@ Missing Functionality:
 2. Checking to see if a returned movie has already been nominated and removing thre ability to double nominate
 3. Deployment to a Hosted Site
 
-#### Second Commit - Thur 3rd, 6:33pm
+#### Second Commit - Thur 3rd Sept 2020, 6:33pm
 
 ![Gif showing workflow of second commit](demo/ezgif-6-480615cb3144.gif)
 
 Changes: 
-1. Checking to see if a returned movie has already been nominated and removing thre ability to double nominate now implemented
+1. Checking to see if a returned movie has already been nominated and removing the ability to double nominate now implemented
 2. Deployment to a Hosted Site - Now live on Heroku, link at top of README
 3. Results and Nominations now in Columns, next to each other to allow for cohesive information reception.
 
 Missing Functionality:
 1. Toggling the Nominate button between enabled and disabled at the right times
+
+#### Third (and final) Commit - Thur 3rd Sept 2020, 8:52pm
+
+![Gif showing workflow of third commit](demo/ezgif-4-5ad242505be4.gif)
+
+Changes: 
+1. Was not able to figure out the proper way I would like to control toggling the Nominate button between enabled and disabled at the right times, so instead have an aleart if the user tries to enter an empty nomination.
 
 Resources
 -
