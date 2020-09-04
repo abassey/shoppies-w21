@@ -89,6 +89,9 @@ Missing Functionality:
 Changes: 
 1. Was not able to figure out the proper way I would like to control toggling the Nominate button between enabled and disabled at the right times, so instead have an aleart if the user tries to enter an empty nomination.
 
+Known Issue(s)/Bug(s): 
+1. If multiple movies have the same name, only the first result is returned.
+
 Resources
 -
 #### Code References and Helpers
