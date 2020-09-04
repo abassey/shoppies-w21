@@ -71,21 +71,25 @@ class App extends Component {
 
   //handling the nominate function. adding the nominated move to the nomiation list
   onClick = (event) => {
-    console.log("I clicked!");
-    var newEntry = {
-      text: this.state.movie.title,
-      key: Date.now() //key used for delete function, instead of index
-    };
-
-    if(this.state.nomList.length !== 5 && this.state.nomList.some(item => item.text === this.state.movie.title) === false)
+    if(this.state.movie.title === '')
     {
-      this.setState({
-        nomList: [...this.state.nomList, newEntry] 
-      })
-    } else if(this.state.nomList.length === 5) {
-      toast.notify("You can only have 5 Nominations!");
-    } else if(this.state.nomList.some(item => item.text === this.state.movie.title) === true) {
-      toast.notify("You've already nominated this movie!");
+      toast.notify("Doesn't look like you have anything there. Want to try searching first?");
+    } else {
+      var newEntry = {
+        text: this.state.movie.title,
+        key: Date.now() //key used for delete function, instead of index
+      };
+  
+      if(this.state.nomList.length !== 5 && this.state.nomList.some(item => item.text === this.state.movie.title) === false)
+      {
+        this.setState({
+          nomList: [...this.state.nomList, newEntry] 
+        })
+      } else if(this.state.nomList.length === 5) {
+        toast.notify("You can only have 5 Nominations!");
+      } else if(this.state.nomList.some(item => item.text === this.state.movie.title) === true) {
+        toast.notify("You've already nominated this movie!");
+      }
     }
   }
 
