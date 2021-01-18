@@ -1,4 +1,4 @@
-# The Shoppies: Movie awards for Entrepreneurs (My Take)
+# The Shoppies: Movie Nomination System
 
 Task
 -
